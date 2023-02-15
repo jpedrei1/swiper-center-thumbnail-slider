@@ -8,6 +8,10 @@ var slider = new Swiper ('.gallery-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+     zoom: {
+        maxRatio: 3,
+        minRatio: 1
+    },
 });
 
 //サムネイルスライド
@@ -24,5 +28,5 @@ var thumbs = new Swiper ('.gallery-thumbs', {
 //thumbs.params.control = slider;
 
 //4系～
-slider.controller.control = thumbs;
+//slider.controller.control = thumbs;
 thumbs.controller.control = slider;
